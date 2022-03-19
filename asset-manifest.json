@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/line-flex-message-webshare-example/static/css/main.0583b491.css",
+    "main.js": "/line-flex-message-webshare-example/static/js/main.2abf977f.js",
+    "static/js/787.13520a6d.chunk.js": "/line-flex-message-webshare-example/static/js/787.13520a6d.chunk.js",
+    "index.html": "/line-flex-message-webshare-example/index.html",
+    "main.0583b491.css.map": "/line-flex-message-webshare-example/static/css/main.0583b491.css.map",
+    "main.2abf977f.js.map": "/line-flex-message-webshare-example/static/js/main.2abf977f.js.map",
+    "787.13520a6d.chunk.js.map": "/line-flex-message-webshare-example/static/js/787.13520a6d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0583b491.css",
+    "static/js/main.2abf977f.js"
+  ]
+}

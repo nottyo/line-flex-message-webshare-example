@@ -22,9 +22,9 @@ async function handleShareClick() {
 
 export default function Share() {
   useEffect(() => {
-    document.getElementById('share')?.click();
+    // document.getElementById('share')?.click();
   })
-  if (!navigator.canShare) {
+  if (liff.getOS() === 'web') {
     return (
       <h3>Sorry, your browser does not support this feature!</h3>
     )
@@ -32,7 +32,7 @@ export default function Share() {
     return (
       <div>
         <h3>ระบบกำลังแชร์ Content ของคุณ...</h3>
-        <button className='share-button' id="share" onClick={() => handleShareClick()}>Share</button>
+        <button id="share" onClick={() => handleShareClick()}>Share</button>
       </div>
     )
   }

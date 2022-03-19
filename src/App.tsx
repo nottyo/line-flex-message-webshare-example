@@ -1,7 +1,7 @@
 import liff from '@line/liff';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './App.css';
-import AppRouter from './Router';
+import Share from './Share';
 
 function App() {
   async function liffInit() {
@@ -17,7 +17,7 @@ function App() {
     liffInit();
   })
   return (
-    <AppRouter />
+    <Share />
   );
 }
 

@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import liff from '@line/liff';
+import React, { useEffect } from 'react';
 import './App.css';
+import AppRouter from './Router';
 
 function App() {
+  async function liffInit() {
+    try {
+      await liff.init({ liffId: '1655535261-kgwXKqJb' });
+      console.log('liff init success!');
+    } catch (error) {
+      console.error('liff init error!');
+    }
+  }
+
+  useEffect(() => {
+    liffInit();
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppRouter />
   );
 }
 
